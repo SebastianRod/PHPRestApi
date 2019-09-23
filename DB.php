@@ -1,5 +1,5 @@
 <?php
     class Database {
-        print("Hola");
+        print("Hola")
     }
 ?>
