@@ -1,6 +1,6 @@
 <?php
 include('DB.php');
-
+//Comentario de prueba para sincronizar git
 class Operaciones{    
         private $con;
         public function __construct($conexion){
