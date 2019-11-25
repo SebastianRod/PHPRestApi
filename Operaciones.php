@@ -13,9 +13,6 @@ class Operaciones{
                 $usrQuery = "
                     SELECT * FROM Usuario 
                     WHERE ID_USUARIO = '".$usrId."';";
-            }else{
-                $usrQuery = "
-                    SELECT * FROM Usuario;";
             }
             $resultado = $this->con->query($usrQuery);
             $usrData = array();
