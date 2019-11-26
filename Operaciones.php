@@ -7,12 +7,12 @@ class Operaciones{
             $this->con = $conexion;
         }
 
-        public function getUser($usrId){
+        public function getUser($usrId, $pwd){
             
             if($usrId){
                 $usrQuery = "
                     SELECT * FROM Usuario 
-                    WHERE ID_USUARIO = '".$usrId."';";
+                    WHERE ID_USUARIO = '".$usrId."' and CLAVE_USUARIO = '".$pwd."';";
             }
             $resultado = $this->con->query($usrQuery);
             $usrData = array();
